@@ -63,7 +63,7 @@ spec:
     spec:
       containers:
       - name: {{.AddonName}}
-        image: "mariadb:10.2"
+        image: {{.Image}}
         imagePullPolicy: IfNotPresent
         resources:
           limits:
